@@ -1,0 +1,167 @@
+/* Cores e configurações gerais */
+:root {
+    --fundo: #F7F4EE;
+    --bege: #E9E2D7;
+    --marrom: #49433D;
+    --marrom-claro: #A58C72;
+    --texto: #38332F;
+}
+
+/* Configurações da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    border-bottom: 1px solid var(--bege);
+}
+
+header h1 {
+    color: var(--marrom);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: var(--marrom);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--marrom-claro);
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+section h2 {
+    color: var(--marrom);
+    font-size: 28px;
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+#sobre {
+    padding: 45px 0;
+}
+
+#sobre h2 {
+    font-size: 38px;
+}
+
+#sobre p {
+    max-width: 700px;
+    margin-bottom: 14px;
+}
+
+/* Projetos */
+article {
+    background-color: #FFFFFF;
+    border: 1px solid var(--bege);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+article h3 {
+    color: var(--marrom);
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 8px;
+}
+
+article p:last-child {
+    color: var(--marrom-claro);
+    font-size: 14px;
+}
+
+/* Estudos e interesses */
+#estudos ul {
+    margin-top: 15px;
+    padding-left: 22px;
+}
+
+#estudos li {
+    margin-bottom: 8px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--bege);
+    padding: 25px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--marrom);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    #sobre h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

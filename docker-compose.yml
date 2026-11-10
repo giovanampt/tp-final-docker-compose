@@ -1,0 +1,12 @@
+services:
+  portfolio:
+    build:
+      context: ./site
+    image: portfolio-giovana:1.0
+    ports:
+      - "8080:80"
+
+  nginx-secundario:
+    image: nginx:latest
+    ports:
+      - "8081:80"
